@@ -1,0 +1,52 @@
+@use "../mixins/responsive.scss" as *;
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 64px 0 423px;
+  background-image: url(/assets/images/lines-header.svg),
+    url(/assets/images/decoration-header.svg);
+  background-repeat: no-repeat;
+  background-position: 180px 178px, 0 412px;
+  @include responsive(tablet) {
+    padding: 124px 0 426px;
+    background-position: 234px 260px, 0px 539px;
+    gap: 2.625rem;
+  }
+  @include responsive(laptop) {
+    width: 400px;
+    background-position: 474px 260px, 165px 773px;
+    padding: 0;
+  }
+}
+.about-skills {
+  padding: 0 24px;
+  @include responsive(tablet) {
+    padding: 0 48px;
+  }
+  @include responsive(laptop) {
+    width: 600px;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  @include responsive(tablet) {
+    margin-bottom: 98px;
+  }
+}
+.skills-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  width: 231px;
+  margin-inline: auto;
+  @include responsive(tablet) {
+    width: 330px;
+  }
+}

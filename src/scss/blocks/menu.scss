@@ -1,12 +1,12 @@
-@use '../mixins/responsive.scss' as *;
-@use '../mixins/hover.scss' as *;
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/hover.scss" as *;
 
 .icon-menu {
   position: fixed;
   right: 24px;
   bottom: 24px;
   z-index: 10;
-  @include responsive(desktop) {
+  @include responsive(tablet) {
     display: none;
   }
 }
@@ -21,7 +21,7 @@
   left: 111px;
   width: 264px;
   height: 100vh;
-  background-color: var(--menu-color);
+  background-color: var(--neutral-color);
   translate: 100%;
   transition: translate 0.5s;
   &--show {
@@ -33,23 +33,40 @@
     padding: 16px 0;
     width: 100%;
     border-bottom: 2px solid var(--primary-color);
+    @include responsive(tablet) {
+      width: 110px;
+      border-bottom: none;
+      border: 2px solid var(--primary-color);
+      border-radius: 8px;
+    }
   }
   &__link {
-    font-family: 'Lilita One', sans-serif;
+    font-family: "Lilita One", sans-serif;
     font-size: 1.25rem;
+    @include responsive(tablet) {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 0.875rem;
+      color: var(--primary-color);
+    }
   }
-  @include responsive(desktop) {
+  @include responsive(tablet) {
+    position: absolute;
     translate: 0;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1rem;
+    width: 363px;
     height: auto;
-    padding: 0;
-    top: 94px;
-    right: 165px;
+    top: 40px;
+    left: 357px;
+    background-color: transparent;
+  }
+  @include responsive(laptop) {
+    top: 48px;
+    left: 1029px;
   }
 }
 .nav {
-  @include responsive(desktop) {
+  @include responsive(tablet) {
     margin-left: auto;
   }
 }

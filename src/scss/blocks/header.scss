@@ -1,4 +1,21 @@
+@use "../mixins/responsive.scss" as *;
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   overflow-x: clip;
+  background-image: url(/assets/images/bg-header.svg),
+    url(/assets/images/arrow.svg), url(/assets/images/line-header.svg);
+  background-repeat: no-repeat;
+  background-position: 0 590px, 171px 618px, 235px 468px;
+  @include responsive(tablet) {
+    background-position: 0 715px, 355px 715px, 604px 623px;
+  }
+  @include responsive(laptop) {
+    background-position: 0 883px, 699px 957px, 1241px 807px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1120px;
+  }
 }
