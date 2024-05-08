@@ -1,11 +1,11 @@
-@use "../mixins/responsive.scss" as *;
-@use "../mixins/hover.scss" as *;
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
 
 .icon-menu {
   position: fixed;
   right: 24px;
   bottom: 24px;
-  z-index: 10;
+  z-index: 1000;
   @include responsive(tablet) {
     display: none;
   }
@@ -24,6 +24,7 @@
   background-color: var(--neutral-color);
   translate: 100%;
   transition: translate 0.5s;
+  z-index: 100;
   &--show {
     translate: 0;
   }
@@ -41,10 +42,10 @@
     }
   }
   &__link {
-    font-family: "Lilita One", sans-serif;
+    font-family: 'Lilita One', sans-serif;
     font-size: 1.25rem;
     @include responsive(tablet) {
-      font-family: "Lexend Deca", sans-serif;
+      font-family: 'Lexend Deca', sans-serif;
       font-size: 0.875rem;
       color: var(--primary-color);
     }

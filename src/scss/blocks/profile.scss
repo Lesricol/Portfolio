@@ -1,4 +1,4 @@
-@use "../mixins/responsive.scss" as *;
+@use '../mixins/responsive.scss' as *;
 
 .profile {
   display: flex;
@@ -6,18 +6,17 @@
   align-items: center;
   gap: 2rem;
   padding: 64px 0 423px;
-  background-image: url(/assets/images/lines-header.svg),
-    url(/assets/images/decoration-header.svg);
+  background-image: url(/assets/images/lines-header.svg), url(/assets/images/decoration-header.svg);
   background-repeat: no-repeat;
-  background-position: 180px 178px, 0 412px;
+  background-position: 261px 178px, 75px 412px;
   @include responsive(tablet) {
     padding: 124px 0 426px;
-    background-position: 234px 260px, 0px 539px;
+    background-position: 474px 260px, 244px 536px;
     gap: 2.625rem;
   }
   @include responsive(laptop) {
     width: 400px;
-    background-position: 474px 260px, 165px 773px;
+    background-position: 350px 190px, 0px 560px;
     padding: 0;
   }
 }
@@ -46,7 +45,12 @@
   gap: 0.5rem 1rem;
   width: 231px;
   margin-inline: auto;
+  margin-bottom: 148px;
   @include responsive(tablet) {
     width: 330px;
+  }
+  @include responsive(laptop) {
+    width: 360px;
+    gap: 1.5rem;
   }
 }

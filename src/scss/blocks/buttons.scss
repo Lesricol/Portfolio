@@ -1,4 +1,4 @@
-@use "../mixins/responsive.scss" as *;
+@use '../mixins/responsive.scss' as *;
 .button {
   display: inline-block;
   padding: 16px 0;
@@ -7,10 +7,18 @@
   text-align: center;
   font-weight: 600;
   font-size: 1.25rem;
+  width: 100%;
   color: var(--neutral-color);
   box-shadow: 0 4px 4px #11555225;
   @include responsive(tablet) {
     width: fit-content;
     padding: 16px 32px;
   }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
 }

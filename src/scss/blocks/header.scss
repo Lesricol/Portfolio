@@ -1,12 +1,9 @@
-@use "../mixins/responsive.scss" as *;
+@use '../mixins/responsive.scss' as *;
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
   overflow-x: clip;
-  background-image: url(/assets/images/bg-header.svg),
-    url(/assets/images/arrow.svg), url(/assets/images/line-header.svg);
+  background-image: url(/assets/images/bg-header.svg), url(/assets/images/arrow.svg),
+    url(/assets/images/line-header.svg);
   background-repeat: no-repeat;
   background-position: 0 590px, 171px 618px, 235px 468px;
   @include responsive(tablet) {
@@ -14,8 +11,14 @@
   }
   @include responsive(laptop) {
     background-position: 0 883px, 699px 957px, 1241px 807px;
-    flex-direction: row;
-    justify-content: space-between;
     height: 1120px;
+  }
+  &-info {
+    @include responsive(laptop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 162px 165px 0;
+    }
   }
 }
