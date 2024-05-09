@@ -40,11 +40,18 @@
       border: 2px solid var(--primary-color);
       border-radius: 8px;
     }
+    @include hover {
+      background-color: var(--hover-color);
+      & .menu__link {
+        color: white;
+      }
+    }
   }
   &__link {
     font-family: 'Lilita One', sans-serif;
     font-size: 1.25rem;
     @include responsive(tablet) {
+      text-align: center;
       font-family: 'Lexend Deca', sans-serif;
       font-size: 0.875rem;
       color: var(--primary-color);

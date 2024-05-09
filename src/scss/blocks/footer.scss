@@ -1,4 +1,12 @@
+@use '../mixins/responsive.scss' as *;
 .footer {
   background-color: var(--footer-color);
   padding: 56px 24px;
+  @include responsive(tablet) {
+    text-align: center;
+  }
+  &-info {
+    padding-top: 24px;
+    border-top: 1px solid var(--neutral-color);
+  }
 }

@@ -1,6 +1,11 @@
+@use '../mixins/responsive.scss' as *;
 .social-icons {
   display: flex;
   gap: 1.5rem;
+  margin-top: 16px;
+  @include responsive(tablet) {
+    justify-content: center;
+  }
 }
 
 .social-container {
