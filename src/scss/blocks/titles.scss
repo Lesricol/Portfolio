@@ -1,8 +1,8 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 .title {
   margin: 0;
   letter-spacing: 0.25px;
-  font-family: 'Lilita One', sans-serif;
+  font-family: "Lilita One", sans-serif;
   &--xl {
     width: 190px;
 
@@ -24,5 +24,19 @@
     @include responsive(tablet) {
       font-size: 2.25rem;
     }
+  }
+  &--m {
+    font-size: 1.25rem;
+    @include responsive(tablet) {
+      font-size: 1.5rem;
+    }
+  }
+  &--s {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  &--light {
+    color: var(--neutral-color);
   }
 }

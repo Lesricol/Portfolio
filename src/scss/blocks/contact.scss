@@ -1,0 +1,12 @@
+@use "../mixins/responsive.scss" as *;
+
+.contact {
+  padding: 0 24px;
+  margin-bottom: 164px;
+  @include responsive(tablet) {
+    padding: 0 48px;
+  }
+  @include responsive(laptop) {
+    padding: 0 264px;
+  }
+}

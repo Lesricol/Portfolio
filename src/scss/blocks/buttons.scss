@@ -1,4 +1,4 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 .button {
   display: inline-block;
   padding: 16px 0;
@@ -13,6 +13,12 @@
   @include responsive(tablet) {
     width: fit-content;
     padding: 16px 32px;
+  }
+  &--green {
+    border: none;
+    @include responsive(tablet) {
+      width: 100%;
+    }
   }
 }
 

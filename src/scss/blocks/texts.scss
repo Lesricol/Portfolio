@@ -19,4 +19,22 @@
     border-radius: 8px;
     margin: 0;
   }
+  &--m {
+    font-size: 1rem;
+    @include responsive(tablet) {
+      font-size: 1.25rem;
+    }
+  }
+  &--project {
+    margin-bottom: 112px;
+    @include responsive(laptop) {
+      width: 768px;
+      margin-inline: auto;
+    }
+  }
+  &--footer {
+    text-align: start;
+    color: var(--neutral-color);
+    margin-bottom: 0;
+  }
 }
