@@ -1,4 +1,4 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 
 .profile {
   display: flex;
@@ -6,7 +6,8 @@
   align-items: center;
   gap: 2rem;
   padding: 64px 0 423px;
-  background-image: url(/assets/images/lines-header.svg), url(/assets/images/decoration-header.svg);
+  background-image: url(/assets/images/lines-header.svg),
+    url(/assets/images/decoration-header.svg);
   background-repeat: no-repeat;
   background-position: 261px 178px, 75px 412px;
   @include responsive(tablet) {
@@ -52,5 +53,6 @@
   @include responsive(laptop) {
     width: 360px;
     gap: 1.5rem;
+    margin-bottom: 0;
   }
 }
