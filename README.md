@@ -28,7 +28,7 @@ Haciendo este trabajo aprendí aún más acerca de los menús responsive y tambi
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
 ![Captura del proyecto](https://raw.githubusercontent.com/VictorRicoV/Portfolio/main/src/design/Captura%20de%20pantalla%202024-05-25%20123343.png)
-![Captura del proyecto](https://raw.githubusercontent.com/VictorRicoV/Portfolio/main/src/design/Captura%20de%20pantalla%202024-05-25%20123343.png)
+![Captura del proyecto](https://raw.githubusercontent.com/VictorRicoV/Portfolio/main/src/design/Captura%20de%20pantalla%202024-05-25%20123306.png)
 ![Captura del proyecto](https://raw.githubusercontent.com/VictorRicoV/Portfolio/main/src/design/Captura%20de%20pantalla%202024-05-25%20123212.png)
 ![Captura del proyecto](https://raw.githubusercontent.com/VictorRicoV/Portfolio/main/src/design/Captura%20de%20pantalla%202024-05-25%20123234.png)
 
